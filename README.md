@@ -5,20 +5,9 @@ application up and running.
 
 Things you may want to cover:
 
+
 * Ruby version 2.3-slim
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* to up the project with docker
+   - docker-compose build
+   - docker-compose run website rails db:create -> create database
+   - docker-compose up
