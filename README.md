@@ -11,3 +11,5 @@ Things you may want to cover:
    - docker-compose build
    - docker-compose run website rails db:create -> create database
    - docker-compose up
+
+* docker-compose run website rails generate rspec:install (don't need to run this.)
