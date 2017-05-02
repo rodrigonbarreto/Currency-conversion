@@ -13,3 +13,8 @@ Things you may want to cover:
    - docker-compose up
 
 * docker-compose run website rails generate rspec:install (don't need to run this.)
+
+* test
+  - docker-compose run --rm website rspec spec/features/home_spec.rb
+  - docker-compose run --rm website rspec spec/controllers/home_controller_spec.rb
+  - docker-compose run --rm website rspec spec/lib/exchange_spec.rb
