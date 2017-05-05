@@ -19,7 +19,7 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
-  hello: "Hello world"
-  description: "Easily Convert Your Coins"
-  subdescription: "For any currency in the World!"
+'pt-BR':
+  hello: "Ola"
+  description: "Converta facilmente suas Moedas"
+  subdescription: "Para qualquer moeda no Mundo!"

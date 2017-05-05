@@ -38,6 +38,9 @@ gem 'jbuilder', '~> 2.5'
 gem 'rest-client'
 
 gem 'bootstrap', '~> 4.0.0.alpha3'
+gem 'rails-i18n', '~> 5.0.0' # For 5.0.x
+gem 'rails-assets-tether', source: 'https://rails-assets.org'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

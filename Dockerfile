@@ -1,16 +1,18 @@
 FROM ruby:2.3-slim
-
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
-RUN apt-get update && apt-get install -qq -y --no-install-recommends build-essential nodejs libpq-dev
-
-COPY Gemfile /usr/src/app/
-
+# Install dependencies
+RUN apt-get update && apt-get install -qq -y --no-install-recommends \
+      build-essential nodejs libpq-dev
+# set up path
+ENV INSTALL_PATH /usr/src/app
+# create folder
+RUN mkdir -p $INSTALL_PATH
+# set up principal folder
+WORKDIR $INSTALL_PATH
+# copy our Gemfile to inside container
+COPY Gemfile ./
+# Install  Gems
 RUN bundle install
-
-COPY . /usr/src/app
-
-EXPOSE 3000
-
-#CMD ["rails", "server", "-b", "0.0.0.0"]
+# Copy our code to container
+COPY . .
+# run puma server
 CMD puma -C config/puma.rb
