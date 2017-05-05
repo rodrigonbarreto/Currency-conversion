@@ -23,3 +23,5 @@
   hello: "Ola"
   description: "Converta facilmente suas Moedas"
   subdescription: "Para qualquer moeda no Mundo!"
+  local_coin: "Moeda Local"
+  desired_currency: "Moeda Pretendida"
