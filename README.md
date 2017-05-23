@@ -18,3 +18,6 @@ application up and running.
   - docker-compose run --rm website rspec spec/features/home_spec.rb
   - docker-compose run --rm website rspec spec/controllers/home_controller_spec.rb
   - docker-compose run --rm website rspec spec/lib/exchange_spec.rb
+
+* before deploy
+  - docker-compose run website bundle exec rake assets:precompile
